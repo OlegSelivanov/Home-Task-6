@@ -9,7 +9,7 @@
 Console.Clear();
 
 Console.Write("Введите числа через пробел: ");
-int[] array = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
+int[] array = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
 int count = 0;
  
 for (int i = 0; i < array.Length; i++)
