@@ -17,8 +17,8 @@ var b2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите значение k2: ");
 var k2 = Convert.ToDouble(Console.ReadLine());
 
-var x = (-b2 + b1)/(-k1 + k2);
-var y = k2 * x + b2;
+var x = (b2 - b1)/(k1 - k2);
+var y = k1 * x + b1;
 
 x = Math.Round(x, 3);
 y = Math.Round(y, 3);
